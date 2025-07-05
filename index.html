@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPal welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="plant.png">
+</head>
+<body>
+    <div class="container">
+        <h1>🪴Welcome to PlantPal </h1>
+        <p>Grow your plant by solving code queastion!</p>
+        <label for="username">Enter Your Name:</label>
+        <input type="text" id="username" placeholder="Your name here" required />
+
+        <label>Choose your Language:</label>
+        <select id="lang">
+            <option value="" disabled selected>-- Select Language --</option>
+            <option value="python">Python</option>
+            <option value="cpp">C++</option>
+        </select>
+
+        <label>Choose Difficulty:</label>
+        <select id="level">
+            <option value="" disabled selected>-- Select Difficulty --</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+        <button onclick="start()">Start</button>
+
+    </div>
+    <script>
+        function start() {
+            const name = document.getElementById("username").value.trim();
+            const lang = document.getElementById("lang").value;
+            const level = document.getElementById("level").value;
+
+            if (name === "") {
+                alert("Please enter your name!");
+                return;
+            }
+
+            if (lang === "") {
+                alert("Please select a language!");
+                return;
+            }
+
+            if (level === "") {
+                alert("Please select a difficulty!");
+                return;
+            }
+
+            localStorage.setItem("username", name);
+            localStorage.setItem("progress", JSON.stringify({ answered: [], current: 1, lang, level }));
+            window.location.href = `quizzes/${lang}/${level}/${lang}_${level}_q1.html`;
+        }
+    </script>
+
+</body>
+</html>

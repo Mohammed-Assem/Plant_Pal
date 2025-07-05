@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>C++ Easy - Q10</title>
+  <link rel="stylesheet" href="..\..\..\quizzes\style_quiz.css">
+  <link rel="icon" type="image/png" href="..\..\..\plant.png">
+</head>
+<body>
+  <div class="navbar">
+    <a href="..\..\..\index.html"><div>🏠</div></a>
+    <a href="cpp_easy_q1.html" class="link_nav"><div class="nav-item">1</div></a>
+    <a href="cpp_easy_q2.html" class="link_nav"><div class="nav-item">2</div></a>
+    <a href="cpp_easy_q3.html" class="link_nav"><div class="nav-item">3</div></a>
+    <a href="cpp_easy_q4.html" class="link_nav"><div class="nav-item">4</div></a>
+    <a href="cpp_easy_q5.html" class="link_nav"><div class="nav-item">5</div></a>
+    <a href="cpp_easy_q6.html" class="link_nav"><div class="nav-item">6</div></a>
+    <a href="cpp_easy_q7.html" class="link_nav"><div class="nav-item">7</div></a>
+    <a href="cpp_easy_q8.html" class="link_nav"><div class="nav-item">8</div></a>
+    <a href="cpp_easy_q9.html" class="link_nav"><div class="nav-item">9</div></a>
+    <div class="nav-item active">10</div>
+  </div>
+
+  <div class="quiz-container">
+    <div class="question-box">
+      <h2>Question 10:</h2>
+      <p>What keyword is used to define a constant in C++?</p>
+
+      <ul id="choices">
+        <li><button onclick="checkAnswer(0)">comment</button></li>
+        <li><button onclick="checkAnswer(1)"># comment</button></li>
+        <li><button onclick="checkAnswer(2)">// comment</button></li>
+        <li><button onclick="checkAnswer(3)">* comment *</button></li>
+      </ul>
+
+      <p id="feedback"></p>
+      <button onclick="nextQuestion()">Finish</button>
+    </div>
+
+    <div class="plant-box">
+      <h2 id="welcome-message"></h2>
+      <p>Here is your plant.Try hard and help it to grow up</p>
+      <img id="plant-img" src="..\..\..\plants\stage9.png" alt="Plant">
+    </div>
+    <audio id="correct-sound" src="..\..\..\sounds/correct.mp3"></audio>
+    <audio id="wrong-sound" src="..\..\..\sounds/wrong.mp3"></audio>
+  </div>
+
+  <script>
+  let correctAnswer = 2;
+
+  function checkAnswer(index) {
+    const choices = document.querySelectorAll("#choices li button");
+    const feedback = document.getElementById("feedback");
+
+    const correctSound = document.getElementById("correct-sound");
+    const wrongSound = document.getElementById("wrong-sound");
+    
+    const name = localStorage.getItem("username");
+    const message = name ? `Let's do it, ${name}! 💪` : "Let's do it!";
+    document.getElementById("welcome-message").innerText = message;
+
+    if (index === correctAnswer) {
+      feedback.textContent = "✅ Correct!";
+      choices[index].style.backgroundColor = "#4ade80";
+      document.getElementById("plant-img").src = "../../../plants/stage9.png";
+
+      correctSound.currentTime = 0;
+      correctSound.play();
+
+      let progress = JSON.parse(localStorage.getItem("progress"));
+      if (!progress.answered.includes(1)) progress.answered.push(1);
+      progress.current = 2;
+      localStorage.setItem("progress", JSON.stringify(progress));
+    } else {
+      feedback.textContent = "❌ Try again!";
+      choices[index].style.backgroundColor = "#f87171";
+
+      wrongSound.currentTime = 0;
+      wrongSound.play();
+    }
+  }
+
+  function nextQuestion() {
+    window.location.href = "../../../done.html";
+  }
+</script>
+
+</body>
+</html>

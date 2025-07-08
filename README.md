@@ -14,9 +14,3 @@
 - Fully interactive quiz interface (no login required)
 - Vertical navbar shows progress through the quiz
 
----
-
-## How It Works
-
-1. **Start Page (`index.html`)**  
-   User selects programming language and difficulty. On click, the app takes them to the first question file, e.g.:

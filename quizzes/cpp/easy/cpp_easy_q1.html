@@ -10,15 +10,15 @@
   <div class="navbar">
     <a href="..\..\..\index.html"><div>🏠</div></a>
     <div class="nav-item active">1</div>
-    <a href="cpp_easy_q2.html" class="link_nav"><div class="nav-item">2</div></a>
-    <a href="cpp_easy_q3.html" class="link_nav"><div class="nav-item">3</div></a>
-    <a href="cpp_easy_q4.html" class="link_nav"><div class="nav-item">4</div></a>
-    <a href="cpp_easy_q5.html" class="link_nav"><div class="nav-item">5</div></a>
-    <a href="cpp_easy_q6.html" class="link_nav"><div class="nav-item">6</div></a>
-    <a href="cpp_easy_q7.html" class="link_nav"><div class="nav-item">7</div></a>
-    <a href="cpp_easy_q8.html" class="link_nav"><div class="nav-item">8</div></a>
-    <a href="cpp_easy_q9.html" class="link_nav"><div class="nav-item">9</div></a>
-    <a href="cpp_easy_q10.html" class="link_nav"><div class="nav-item">10</div></a>
+    <a  class="link_nav"><div class="nav-item">2</div></a>
+    <a  class="link_nav"><div class="nav-item">3</div></a>
+    <a  class="link_nav"><div class="nav-item">4</div></a>
+    <a  class="link_nav"><div class="nav-item">5</div></a>
+    <a  class="link_nav"><div class="nav-item">6</div></a>
+    <a  class="link_nav"><div class="nav-item">7</div></a>
+    <a  class="link_nav"><div class="nav-item">8</div></a>
+    <a  class="link_nav"><div class="nav-item">9</div></a>
+    <a  class="link_nav"><div class="nav-item">10</div></a>
   </div>
 
   <div class="quiz-container">
@@ -34,7 +34,7 @@
       </ul>
 
       <p id="feedback"></p>
-      <button onclick="nextQuestion()">Next</button>
+      <button  id="next-button" onclick="nextQuestion()">Next</button>
     </div>
 
     <div class="plant-box">
@@ -49,15 +49,15 @@
   <script>
   let correctAnswer = 0;
 
-  function checkAnswer(index) {
+ function checkAnswer(index) {
     const choices = document.querySelectorAll("#choices li button");
     const feedback = document.getElementById("feedback");
-
     const correctSound = document.getElementById("correct-sound");
     const wrongSound = document.getElementById("wrong-sound");
-    
+    const nextButton = document.getElementById("next-button");
+
     const name = localStorage.getItem("username");
-    const message = name ? `Let's do it, ${name}! 💪` : "Let's do it!";
+    const message = name ? `Let's do it, ${name}! ` : "Let's do it!";
     document.getElementById("welcome-message").innerText = message;
 
     if (index === correctAnswer) {
@@ -67,6 +67,8 @@
 
       correctSound.currentTime = 0;
       correctSound.play();
+
+      nextButton.disabled = false;
 
       let progress = JSON.parse(localStorage.getItem("progress"));
       if (!progress.answered.includes(1)) progress.answered.push(1);
@@ -78,8 +80,11 @@
 
       wrongSound.currentTime = 0;
       wrongSound.play();
+
+      nextButton.disabled = true;
     }
   }
+  document.getElementById("next-button").disabled = true;
 
   function nextQuestion() {
     window.location.href = "cpp_easy_q2.html";

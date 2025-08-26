@@ -1,0 +1,245 @@
+Easy (Q1–Q10)
+
+Which keyword is used to define a class in Java?
+a) define
+b) class
+c) struct
+d) object
+Hint: Java uses the same keyword as C++.
+✅ Answer: b) class
+
+Which method is the entry point of a Java program?
+a) start()
+b) init()
+c) main()
+d) run()
+Hint: Every Java program begins execution from this method.
+✅ Answer: c) main()
+
+Which data type is used to store true/false values?
+a) int
+b) boolean
+c) char
+d) float
+Hint: Logical type.
+✅ Answer: b) boolean
+
+What is the size of int in Java?
+a) 2 bytes
+b) 4 bytes
+c) 8 bytes
+d) Depends on system
+Hint: Java is platform-independent.
+✅ Answer: b) 4 bytes
+
+Which keyword prevents inheritance?
+a) static
+b) final
+c) const
+d) abstract
+Hint: Means "cannot be extended."
+✅ Answer: b) final
+
+Which of these is not a Java primitive type?
+a) byte
+b) String
+c) float
+d) char
+Hint: One is actually a class.
+✅ Answer: b) String
+
+Which operator is used for concatenation of strings?
+a) &
+b) +
+c) *
+d) %
+Hint: Same as addition.
+✅ Answer: b) +
+
+Which keyword is used to create an object?
+a) malloc
+b) new
+c) alloc
+d) object
+Hint: Used with constructors.
+✅ Answer: b) new
+
+What is the default value of a boolean variable in Java?
+a) true
+b) false
+c) null
+d) 0
+Hint: Boolean defaults to "not true."
+✅ Answer: b) false
+
+Which loop guarantees at least one execution?
+a) for
+b) while
+c) do-while
+d) foreach
+Hint: Condition checked after execution.
+✅ Answer: c) do-while
+
+Medium (Q11–Q20)
+
+Which access modifier makes a member accessible only within its package?
+a) public
+b) private
+c) default
+d) protected
+Hint: No keyword needed.
+✅ Answer: c) default
+
+Which of these supports multiple inheritance in Java?
+a) class
+b) interface
+c) abstract class
+d) constructor
+Hint: Java avoids diamond problem using this.
+✅ Answer: b) interface
+
+Which collection class allows key-value pairs?
+a) List
+b) Map
+c) Set
+d) ArrayList
+Hint: Dictionary-like structure.
+✅ Answer: b) Map
+
+What is JVM responsible for?
+a) Compiling Java source code
+b) Running bytecode
+c) Writing Java code
+d) Converting Java to C++
+Hint: Execution environment.
+✅ Answer: b) Running bytecode
+
+What will System.out.println(10/0); result in?
+a) 0
+b) Infinity
+c) ArithmeticException
+d) NaN
+Hint: Integer division by zero.
+✅ Answer: c) ArithmeticException
+
+Which keyword is used for exception handling?
+a) catch
+b) throw
+c) try
+d) All of the above
+Hint: Java uses multiple constructs.
+✅ Answer: d) All of the above
+
+Which class is the superclass of all classes?
+a) Object
+b) Base
+c) Parent
+d) Root
+Hint: Defined in java.lang.
+✅ Answer: a) Object
+
+Which statement is true about String in Java?
+a) Mutable
+b) Immutable
+c) Primitive
+d) Stored in stack only
+Hint: Once created, cannot change.
+✅ Answer: b) Immutable
+
+Which thread method pauses execution for some time?
+a) stop()
+b) sleep()
+c) wait()
+d) yield()
+Hint: Needs milliseconds.
+✅ Answer: b) sleep()
+
+Which keyword is used for memory cleanup?
+a) free
+b) delete
+c) finalize
+d) garbage
+Hint: Java has a garbage collector.
+✅ Answer: c) finalize
+
+Hard (Q21–Q30)
+
+Which of these allows creating anonymous inner classes?
+a) new keyword
+b) abstract class
+c) interface
+d) lambda
+Hint: Used inline.
+✅ Answer: a) new keyword
+
+What is the time complexity of searching in a HashMap?
+a) O(1) average, O(n) worst
+b) O(log n)
+c) O(n^2)
+d) O(n log n)
+Hint: Depends on collisions.
+✅ Answer: a) O(1) average, O(n) worst
+
+Which Java feature ensures type safety at compile time?
+a) Generics
+b) Interfaces
+c) Packages
+d) Polymorphism
+Hint: Introduced in Java 5.
+✅ Answer: a) Generics
+
+Which functional interface does Java 8’s lambda use for single argument returning value?
+a) Runnable
+b) Function
+c) Supplier
+d) Consumer
+Hint: Has apply(T).
+✅ Answer: b) Function
+
+What will happen if two threads access ArrayList concurrently?
+a) Works fine
+b) ConcurrentModificationException
+c) ThreadDeath
+d) Deadlock
+Hint: Use CopyOnWriteArrayList.
+✅ Answer: b) ConcurrentModificationException
+
+Which annotation ensures overriding a superclass method?
+a) @Super
+b) @Override
+c) @Extend
+d) @Method
+Hint: Compiler check.
+✅ Answer: b) @Override
+
+Which keyword is used for method synchronization?
+a) synchronized
+b) lock
+c) atomic
+d) threadsafe
+Hint: Ensures one thread at a time.
+✅ Answer: a) synchronized
+
+What will == check for objects?
+a) Value equality
+b) Reference equality
+c) Both
+d) None
+Hint: Use equals() for values.
+✅ Answer: b) Reference equality
+
+Which design pattern is enforced by enum in Java?
+a) Singleton
+b) Factory
+c) Observer
+d) Proxy
+Hint: Enum ensures one instance.
+✅ Answer: a) Singleton
+
+Which of these is NOT a feature of Java Streams API?
+a) Parallel processing
+b) Immutable pipeline
+c) Stateful intermediate ops
+d) Modifying source collection
+Hint: Streams don’t alter source.
+✅ Answer: d) Modifying source collection

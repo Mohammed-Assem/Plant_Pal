@@ -1,0 +1,246 @@
+JavaScript (30 Questions)
+Easy (Q1–Q10)
+
+Which keyword declares a variable in JavaScript?
+a) let
+b) var
+c) const
+d) All of the above
+Hint: Modern JS supports three.
+✅ Answer: d) All of the above
+
+Which symbol is used for strict equality in JavaScript?
+a) ==
+b) =
+c) ===
+d) !==
+Hint: Checks value and type.
+✅ Answer: c) ===
+
+What is the default value of an uninitialized variable?
+a) null
+b) undefined
+c) 0
+d) NaN
+Hint: JS distinguishes between null and…
+✅ Answer: b) undefined
+
+Which method displays a message in a popup box?
+a) console.log()
+b) alert()
+c) print()
+d) msg()
+Hint: Used often in beginner code.
+✅ Answer: b) alert()
+
+Which data type is NOT primitive in JS?
+a) number
+b) boolean
+c) object
+d) string
+Hint: Everything else is stored by value.
+✅ Answer: c) object
+
+What will typeof NaN return?
+a) NaN
+b) number
+c) undefined
+d) string
+Hint: Strange but true.
+✅ Answer: b) number
+
+Which function converts a string to integer?
+a) parseInt()
+b) Number()
+c) toInt()
+d) convert()
+Hint: Used in parsing.
+✅ Answer: a) parseInt()
+
+Which array method adds elements to the end?
+a) push()
+b) pop()
+c) shift()
+d) unshift()
+Hint: Opposite of pop.
+✅ Answer: a) push()
+
+Which symbol starts a comment in JS?
+a) #
+b) //
+c) <!--
+d) *
+Hint: Same as C++.
+✅ Answer: b) //
+
+What is the output of Boolean("")?
+a) true
+b) false
+c) undefined
+d) error
+Hint: Empty string is falsy.
+✅ Answer: b) false
+
+Medium (Q11–Q20)
+
+Which scope does let have?
+a) Function
+b) Block
+c) Global
+d) Module
+Hint: Introduced in ES6.
+✅ Answer: b) Block
+
+Which operator is used for default values?
+a) ||
+b) ??
+c) &&
+d) ?:
+Hint: Called nullish coalescing.
+✅ Answer: b) ??
+
+Which method creates a new array from existing elements?
+a) slice()
+b) splice()
+c) join()
+d) concat()
+Hint: Doesn’t modify original.
+✅ Answer: a) slice()
+
+What does === check?
+a) Value only
+b) Type only
+c) Value + type
+d) Reference only
+Hint: It’s strict equality.
+✅ Answer: c) Value + type
+
+Which method executes a function after a delay?
+a) setInterval()
+b) setTimeout()
+c) delay()
+d) wait()
+Hint: One-time execution.
+✅ Answer: b) setTimeout()
+
+What will [1,2,3].map(x => x*2) return?
+a) [2,4,6]
+b) [1,2,3,2,4,6]
+c) [1,2,3]
+d) Error
+Hint: map applies function to each element.
+✅ Answer: a) [2,4,6]
+
+Which keyword is used to handle exceptions?
+a) throw
+b) try-catch
+c) finally
+d) All of these
+Hint: JS is similar to Java here.
+✅ Answer: d) All of these
+
+Which symbol is used for template literals?
+a) " "
+b) ' '
+c)
+d) <>
+Hint: Allows ${} expressions.
+✅ Answer: c)
+
+Which object handles JSON parsing?
+a) JSON
+b) Object
+c) String
+d) Parse
+Hint: Has parse() and stringify().
+✅ Answer: a) JSON
+
+Which keyword is used to import a module (ES6)?
+a) require
+b) include
+c) import
+d) load
+Hint: Modern syntax.
+✅ Answer: c) import
+
+Hard (Q21–Q30)
+
+What will [1,2] == [1,2] return?
+a) true
+b) false
+c) undefined
+d) error
+Hint: Arrays are compared by reference.
+✅ Answer: b) false
+
+Which event is triggered when the DOM is fully loaded?
+a) onload
+b) DOMContentLoaded
+c) readyState
+d) beforeunload
+Hint: Faster than onload.
+✅ Answer: b) DOMContentLoaded
+
+Which prototype does every JS object inherit from?
+a) Object.prototype
+b) Array.prototype
+c) Function.prototype
+d) Global.prototype
+Hint: Root of inheritance chain.
+✅ Answer: a) Object.prototype
+
+Which keyword is used to create a generator function?
+a) function*
+b) yield
+c) async
+d) gen
+Hint: Asterisk marks it.
+✅ Answer: a) function*
+
+Which feature does async/await simplify?
+a) Callbacks
+b) Promises
+c) Threads
+d) Modules
+Hint: Built on top of promises.
+✅ Answer: b) Promises
+
+What is the result of typeof null?
+a) null
+b) object
+c) undefined
+d) error
+Hint: A long-standing JS bug.
+✅ Answer: b) object
+
+Which operator is used to spread elements into arrays/objects?
+a) …
+b) *
+c) #
+d) %
+Hint: Same as rest operator.
+✅ Answer: a) …
+
+Which symbol makes a property private in a class?
+a) _
+b) #
+c) $
+d) ~
+Hint: Added in modern JS.
+✅ Answer: b) #
+
+What is tail call optimization in JS?
+a) Optimizing loops
+b) Reusing stack frame for recursion
+c) Inline function expansion
+d) Async handling
+Hint: Prevents stack overflow in recursion.
+✅ Answer: b) Reusing stack frame for recursion
+
+What does Object.freeze(obj) do?
+a) Prevents adding/removing properties
+b) Prevents modification of existing values
+c) Makes object immutable
+d) All of the above
+Hint: Deep freeze not automatic.
+✅ Answer: d) All of the above

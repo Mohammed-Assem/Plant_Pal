@@ -34,7 +34,15 @@
       </ul>
 
       <p id="feedback"></p>
-      <button id="next-button" onclick="nextQuestion()">Finish</button>
+      <div class="buttons">
+        <button class="hint" onclick="hint()">Hint</button>
+        <button id="next-button" class="next" onclick="nextQuestion()">Finish</button>
+      </div>
+      <script>
+        function hint() {
+          alert("Hint: Same as in Java/JavaScript.");
+        }
+      </script>
     </div>
 
     <div class="plant-box">

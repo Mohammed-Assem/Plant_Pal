@@ -35,7 +35,15 @@
       </ul>
 
       <p id="feedback"></p>
-      <button id="next-button" onclick="nextQuestion()">Next</button>
+      <div class="buttons">
+        <button class="hint" onclick="hint()">Hint</button>
+        <button id="next-button" class="next" onclick="nextQuestion()">Next</button>
+      </div>
+      <script>
+        function hint() {
+          alert("Hint: Empty sequences are treated as False in Python.");
+        }
+      </script>
     </div>
 
     <div class="plant-box">

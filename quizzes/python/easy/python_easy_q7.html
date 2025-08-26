@@ -34,7 +34,15 @@
       </ul>
 
       <p id="feedback"></p>
-      <button id="next-button" onclick="nextQuestion()">Next</button>
+      <div class="buttons">
+        <button class="hint" onclick="hint()">Hint</button>
+        <button id="next-button" class="next" onclick="nextQuestion()">Next</button>
+      </div>
+      <script>
+        function hint() {
+          alert("Hint: Python doesn’t auto-convert between str and int.");
+        }
+      </script>
     </div>
 
     <div class="plant-box">

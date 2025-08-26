@@ -1,0 +1,245 @@
+Easy (Q1–Q10)
+
+Which keyword defines a class in C#?
+a) struct
+b) class
+c) define
+d) object
+Hint: Same as Java.
+✅ Answer: b) class
+
+Which method is the entry point of a C# program?
+a) start()
+b) Main()
+c) run()
+d) Program()
+Hint: Case-sensitive.
+✅ Answer: b) Main()
+
+Which symbol is used for single-line comments in C#?
+a) //
+b) #
+c) <!--
+d) --
+Hint: Like Java/C++.
+✅ Answer: a) //
+
+Which data type is used for text in C#?
+a) char[]
+b) String
+c) str
+d) text
+Hint: Starts with capital letter.
+✅ Answer: b) String
+
+Which keyword is used to create objects in C#?
+a) malloc
+b) new
+c) alloc
+d) create
+Hint: Same as Java.
+✅ Answer: b) new
+
+What is the size of int in C#?
+a) 2 bytes
+b) 4 bytes
+c) 8 bytes
+d) Depends on OS
+Hint: Always fixed.
+✅ Answer: b) 4 bytes
+
+Which loop executes at least once?
+a) for
+b) while
+c) do-while
+d) foreach
+Hint: Condition checked later.
+✅ Answer: c) do-while
+
+What is the default value of a bool variable?
+a) true
+b) false
+c) null
+d) 0
+Hint: Default is “not true.”
+✅ Answer: b) false
+
+Which keyword makes a class unextendable?
+a) sealed
+b) final
+c) static
+d) const
+Hint: Java uses final, C# uses…
+✅ Answer: a) sealed
+
+Which type of array can store multiple dimensions in C#?
+a) jagged
+b) multidimensional
+c) rectangular
+d) both b and c
+Hint: Supports both forms.
+✅ Answer: d) both b and c
+
+Medium (Q11–Q20)
+
+Which keyword prevents a method from being overridden?
+a) static
+b) final
+c) sealed
+d) const
+Hint: Similar to sealed classes.
+✅ Answer: c) sealed
+
+Which collection doesn’t allow duplicate values?
+a) List
+b) HashSet
+c) Dictionary
+d) Queue
+Hint: Works like a mathematical set.
+✅ Answer: b) HashSet
+
+Which statement is used to handle exceptions?
+a) catch
+b) try
+c) throw
+d) All of these
+Hint: C# exception handling is similar to Java.
+✅ Answer: d) All of these
+
+Which type of method belongs to the class rather than the object?
+a) abstract
+b) static
+c) virtual
+d) override
+Hint: Called using ClassName.Method().
+✅ Answer: b) static
+
+Which interface must be implemented to use foreach?
+a) IEnumerable
+b) ICollection
+c) IList
+d) IEnumerator
+Hint: Enables iteration.
+✅ Answer: a) IEnumerable
+
+Which keyword is used to define a constant value?
+a) final
+b) const
+c) static
+d) readonly
+Hint: Value fixed at compile-time.
+✅ Answer: b) const
+
+Which modifier makes a member accessible only in its class and subclasses?
+a) private
+b) protected
+c) internal
+d) public
+Hint: Inheritance visibility.
+✅ Answer: b) protected
+
+Which type supports deferred execution in C#?
+a) IEnumerable
+b) IQueryable
+c) Both a and b
+d) List
+Hint: LINQ queries use this.
+✅ Answer: c) Both a and b
+
+Which class is the root of all types in C#?
+a) Root
+b) System
+c) Object
+d) Base
+Hint: Like Java’s Object.
+✅ Answer: c) Object
+
+What will Console.WriteLine(10/0); output for doubles?
+a) Exception
+b) Infinity
+c) NaN
+d) 0
+Hint: C# handles float division gracefully.
+✅ Answer: b) Infinity
+
+Hard (Q21–Q30)
+
+Which keyword is used for asynchronous methods in C#?
+a) async
+b) await
+c) task
+d) yield
+Hint: Goes before the method declaration.
+✅ Answer: a) async
+
+Which design pattern does using statement implement?
+a) Factory
+b) Singleton
+c) RAII (Dispose pattern)
+d) Observer
+Hint: Ensures cleanup of resources.
+✅ Answer: c) RAII (Dispose pattern)
+
+Which keyword is used to return values lazily in an iterator?
+a) return
+b) yield
+c) break
+d) continue
+Hint: Produces one value at a time.
+✅ Answer: b) yield
+
+Which access modifier allows visibility within the same assembly but not outside?
+a) protected
+b) private
+c) internal
+d) public
+Hint: Used in DLL boundaries.
+✅ Answer: c) internal
+
+Which delegate type returns a value?
+a) Action
+b) Predicate
+c) Func
+d) EventHandler
+Hint: Most general-purpose delegate.
+✅ Answer: c) Func
+
+Which C# feature enables query-like syntax on collections?
+a) LINQ
+b) PLINQ
+c) Lambda
+d) Delegates
+Hint: Written like SQL.
+✅ Answer: a) LINQ
+
+Which keyword allows safe code to interact with unmanaged resources?
+a) unsafe
+b) fixed
+c) stackalloc
+d) All of the above
+Hint: Pointer-related.
+✅ Answer: d) All of the above
+
+Which type is used for dynamic method invocation at runtime?
+a) object
+b) dynamic
+c) var
+d) delegate
+Hint: Introduced in C# 4.0.
+✅ Answer: b) dynamic
+
+What does the lock keyword ensure in C#?
+a) Deadlock prevention
+b) Mutual exclusion
+c) Thread creation
+d) Asynchronous execution
+Hint: Only one thread at a time.
+✅ Answer: b) Mutual exclusion
+
+Which keyword enables pattern matching in C#?
+a) match
+b) is
+c) case
+d) switch
+Hint: Added in modern C#.
+✅ Answer: b) is

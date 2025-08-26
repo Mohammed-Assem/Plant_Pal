@@ -19,6 +19,9 @@
             <option value="" disabled selected>-- Select Language --</option>
             <option value="python">Python</option>
             <option value="cpp">C++</option>
+            <option value="c#">C#</option>
+            <option value="java">Java</option>
+            <option value="js">JavaScript</option>
         </select>
 
         <label>Choose Difficulty:</label>
@@ -32,7 +35,7 @@
 
     </div>
     <script>
-        function start() {
+        function start() { 
             const name = document.getElementById("username").value.trim();
             const lang = document.getElementById("lang").value;
             const level = document.getElementById("level").value;
